@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <title>Safety-Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krub&family=Open+Sans:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img class="head_logo" src="/Safety-Bot_logo.png" alt="">
+        <div class="hero">
+            <h1>Bienvenidos a Safety-Bot</h1>
+            <p>No sabes que hacer en medio de un accidente? Nuestro chatbot te ayudará!</p>
+        </div>
+    </header>
+
+    <hr></hr>
+
+    <main>
+        <section class="productos">
+            <h2>Nuestros objetivos principales son:</h2>
+            <div class="producto">
+                <img src="/informarte.png" alt="Producto 1">
+                <h3>Informarte</h3>
+                <p>Sobre lo que necesitas llevar a cabo en medio de un accidente.</p>
+
+            </div>
+            <div class="producto">
+                <img src="/pasos.png" alt="Producto 2">
+                <h3>Ayudarte</h3>
+                <p>Para que sigas los pasos que nuestro chatbot te proporcionará.</p>
+
+            </div>
+            <div class="producto">
+                <img src="/capacitarte.png" alt="Producto 3">
+                <h3>Capacitarte</h3>
+                <p>La proxima vez que vuelvas a vivir una situacián de riesgo sabrás que hacer.</p>
+
+            </div>
+        </section>
+        <section class="SobreNosotros">
+            <h3>Sobre Nosotros</h3>
+            <div>
+                <p>Hola! Es un gusto conocerte, nos presentamos, somos un grupo de ingenieros que busca dejar su huella en el mundo desarrollando una herramienta
+                    que nos ayudará a todos a saber que hacer en caso de una emergencia, ¿te cortaste y no sabes que hacer?, ¿se cayó tu hijo y tiene un raspon?,
+                    ¿alguien se quemó o se cortó?, <strong>¡No te preocupes!</strong>, las respuestas las tiene nuestro chatbot llamado <strong>"safety-bot"</strong> un chatbot
+                    desarrollado para informar, ayudar y capacitar a los usuarios sobre accidentes que pueden pasar a cualquier hora y momento de nuestras vidas
+                    cotidianas, en caso de que nos consultes desde un dispositivo movil, en la aplicación tienes un botón para marcar al 911, ¿Dudas sobre la información que manejamos? descuida, la información que brinda nuestro chatbot es <strong>información avalada y certificada</strong>
+                    por cuerpos de seguridad que están certificados sobre primero auxilios, asi que no tengas miedo en seguir los pasos que nuestro chatbot te brindará.
+            </div>
+        </section>
+
+
+        <section class="SobreNosotros">
+            <h3>Certificaciones</h3>
+            <div>
+                <img src="CertificacionBombero.jpeg" class="CertificacionBomberoImg">
+                <img src="Firmas.jpeg" class="FirmasImg">
+                <img src="Safety-Bot_logo.png" class="SafetyBotImg">
+            </div>
+        </section>
+
+
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "6ff3b7c4-8398-4e08-b7c7-13e2e2c18882", // The ID of this integration.
+              region: "au-syd", // The region your integration is hosted in.
+              serviceInstanceID: "8f3fa2d5-6894-43cf-a46e-22a9af530f97", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+        </script>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+</html>
